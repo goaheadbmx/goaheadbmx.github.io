@@ -1,293 +1,396 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oferta de Frutas, Legumes e Verduras!</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <header>
         <!-- slogan | foto | logo -->
-         <h1>FRUTAS & VERDURAS</h1>
-         <h2>FRESQUINHAS</h2>
-         <img alt="foto mulher" src="#">
-         <img alt="logo" src="#">
+        <div class="slogan">
+            <h1 id="slogan-destaque1">FRUTAS</h1>
+            <h1 id="divisor">&</h1>
+            <h1 id="slogan-destaque2">VERDURAS</h1>
+            <h2>FRESQUINHAS</h2>
+        </div><!--slogan-->
+        <div class="persona">
+            <img alt="foto mulher" src="imgs/foto-mulher.png">
+        </div><!--persona-->
+        <div class="logo">
+            <h2>Sua Logo</h2>
+            <h1>Aqui</h1>
+        </div><!--logo-->
     </header>
     <main>
-        <!-- destaque 1 linha 2 colunas -->
-        <topo>
-            <!-- %desconto | img | título | preço anterior | preço atualizado -->
-             <table>
-                <tr class="destaque"> <!-- 1 linha 2 colunas -->
-                    <td>
+        <!-- %desconto | img | título | preço anterior | preço atualizado -->
+        <div class="container-destaque"><!-- destaque 1 linha 2 colunas -->
+            <div class="linha-destaque"> <!-- 1 linha 2 colunas -->
+                <div class="coluna-destaque">
                     <p id="desconto">-50%</p>
-                    <img alt="Laranja" src="imgs/laranja.jpg">
-                    <div id="destaque1">
+                    <img title="Laranja" src="imgs/laranja.jpg">
+                    <div class="destaque1">
                         <p class="topo-anterior">PREÇO</p>
                         <p class="preco-anterior">R$20,00</p>
-                    </div>
-                    <div id="destaque2">
+                    </div><!--destaque1-->
+                    <div class="destaque2">
                         <h3>LARANJA</h3>
                         <p class="topo-atualizado">POR</p>
                         <p class="unidade-medida">KG</p>
                         <p class="preco-atualizado">R$10,00</p>
-                    </div>
-                    </td>
-                    <td>
-                    <!-- <p id="desconto">-50%</p> -->
-                    <img id="img-destaque2" alt="Alface" src="imgs/alface.png">
-                    <div id="destaque1">
+                    </div><!--destaque2-->
+                </div><!--coluna-destaque-->
+                <div class="coluna-destaque">
+                    <img id="foto-destaque2" title="Alface" src="imgs/alface.png">
+                    <div class="destaque1">
                         <p class="topo-anterior">PREÇO</p>
                         <p class="preco-anterior">R$20,00</p>
-                    </div>
-                    <div id="destaque2">
+                    </div><!--destaque1-->
+                    <div class="destaque2">
                         <h3>ALFACE</h3>
                         <p class="topo-atualizado">POR</p>
                         <p class="unidade-medida">KG</p>
                         <p class="preco-atualizado">R$10,00</p>
-                    </div>
-                    </td>
-                </tr>
-             </table>
-        </topo>
+                    </div><!--destaque2-->
+                </div><!--coluna-destaque-->
+            </div><!--linha-destaque-->
+        </div><!-- container-destaque-->
         <section>
-            <!-- itens 4 colunas e 6 linhas -->
-            <table>
-                <tr> <!-- 1 linha 4 colunas -->
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Limão" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>LIMÃO</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Batata" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>BATATA</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Maracujá" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>MARACUJÁ</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Abacate" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>ABACATE</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                </tr>
-                <tr> <!-- 1 linha 4 colunas -->
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Abacaxi" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>ABACAXI</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Acerola" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>ACEROLA</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Amora" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>AMORA</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Caqui" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>CAQUI</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                </tr>
-                <tr> <!-- 1 linha 4 colunas -->
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Goiaba" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>GOIABA</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Kiwi" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>KIWI</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Maçã" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>MAÇÃ</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Mamão" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>MAMÃO</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                </tr>
-                <tr> <!-- 1 linha 4 colunas -->
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Manga" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>MANGA</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Melância" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>MELÂNCIA</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Morango" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>MORANGO</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Abóbora" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>ABÓBORA</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                </tr>
-                <tr> <!-- 1 linha 4 colunas -->
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Batata Doce" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>BATATA DOCE</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Agrião" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>AGRIÃO</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Brócolis" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>BRÓCOLIS</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Chicória" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>CHICÓRIA</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                </tr>
-                <tr> <!-- 1 linha 4 colunas -->
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Fava" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>FAVA</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Gengibre" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>GENGIBRE</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Jiló" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>JILÓ</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                    <td>
-                    <p id="desconto">-50%</p>
-                    <img alt="Manjericão" src="#">
-                    <p class="topo-anterior">PREÇO</p>
-                    <h3>MANJERICÃO</h3>
-                    <p class="topo-atualizado">POR</p>
-                    <p class="unidade-medida">KG</p>
-                    <p class="preco-atualizado">R$10,00</p>
-                    </td>
-                </tr>
-            </table>
+            <div class="container-grade"><!-- itens 4 colunas e 6 linhas -->
+                <div class="linha-grade">
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                </div><!--linha-grade-->
+                <div class="linha-grade">
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                </div><!--linha-grade-->
+                <div class="linha-grade">
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                </div><!--linha-grade-->
+                <div class="linha-grade">
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                </div><!--linha-grade-->
+                <div class="linha-grade">
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                </div><!--linha-grade-->
+                <div class="linha-grade">
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                    <div class="coluna-grade">
+                        <img title="Limão" src="imgs/laranja.jpg">
+                        <div class="grade1">
+                            <p class="grade-topo-anterior">PREÇO</p>
+                            <p class="grade-preco-anterior">R$20,00</p>
+                        </div><!--destaque1-->
+                        <div class="grade2">
+                            <h3>LIMÃO</h3>
+                            <p class="grade-topo-atualizado">POR</p>
+                            <p class="grade-unidade-medida">KG</p>
+                            <p class="grade-preco-atualizado">R$10,00</p>
+                        </div><!--destaque2-->
+                    </div><!--coluna-grade-->
+                </div><!--linha-grade-->
+            </div><!--container-grade-->
         </section>
     </main>
     <footer>
         <!-- Orientação sobre tarefa - etapa 2 - encarte -->
-         <h4>CRIE SEU ENCARTE COM ESTE TEMA!</h4>
+        <h4>CRIE SEU ENCARTE COM ESTE TEMA!</h4>
     </footer>
 </body>
+
 </html>
