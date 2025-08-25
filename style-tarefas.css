@@ -1,0 +1,64 @@
+main{
+    flex-flow: wrap;
+}
+.titulo{
+    display: grid;
+    grid-template-areas:
+    'tarefas link-tarefa criterios';
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+#tarefas{
+    grid-area: tarefas;
+}
+#link-tarefa{
+    grid-area: link-tarefa;
+}
+#criterios{
+    grid-area: criterios;
+}
+.titulo h2{
+    font-family: "Montserrat", sans-serif;
+    padding: 30px 10px;
+    background-color: #d19004;
+    border: 1px solid #d19004;
+    text-align: center;
+    align-self: center;        
+}
+
+.linha-tarefa{
+    display: grid;
+    grid-template-areas:
+    'coluna1 coluna2 coluna3';
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.linha-tarefa p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid #d19004;
+    padding: 30px 10px;
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    font-size: 1em;
+}
+
+.linha-tarefa a{
+    text-decoration: none;
+    color: #275223;
+}
+.coluna1{
+    grid-area: coluna1;
+}
+.coluna2{
+    grid-area: coluna2;
+}
+.coluna3{
+    grid-area: coluna3;
+}

@@ -1,0 +1,67 @@
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    background-color: #c8dbc6;
+    padding: 3px;
+    margin-left: 10px;
+}
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.85em;
+    text-align: justify;
+    padding: 10px;
+}
+
+img{
+    margin-top: 15px;
+    width: 170px;
+    height: auto;
+    border-radius: 5px;
+}
+main{
+    display: grid;
+    grid-template-areas:
+    'section bside'
+    'section cside'
+    'article cside';
+    grid-template-columns: 3fr 180px;
+    column-gap: 10px;
+}
+
+.main-section{
+    grid-area: section;
+    /* align-self: self-start; */
+    /* border: 1px solid black; */
+}
+.main-section li{
+    font-size: 0.8em;
+    text-align: justify;
+}
+main article{
+    grid-area: article;
+    /* border: 1px solid black; */
+}
+
+main bside{
+    grid-area: bside;
+    padding-right: 10px;
+}
+main cside{
+    grid-area: cside;
+    padding-right: 10px;
+}
+main cside p{
+    padding: 0;
+}
+
+main bside ul, main cside ul{
+    margin-left: -25px;
+}
+main bside li, main cside  li{
+    font-size: 0.9em;
+    text-align: justify;
+}
